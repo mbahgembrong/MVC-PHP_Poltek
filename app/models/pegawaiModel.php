@@ -1,7 +1,7 @@
 <?php
 class pegawaiModel
 {
-   // Database
+    // Database
     // properti database
     private $host='localhost';
     private $username='root';
@@ -20,6 +20,7 @@ class pegawaiModel
     // method untuk query db
     public function db_pegawai()
     {
+        $datapegawai=[];
         $data="SELECT * FROM pegawai";
         $result=$this->connect->query($data);
         while ($i=mysqli_fetch_array($result)) {
@@ -28,6 +29,3 @@ class pegawaiModel
         return $datapegawai;
     }
 }
-
-
-?>

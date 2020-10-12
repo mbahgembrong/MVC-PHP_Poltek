@@ -48,6 +48,7 @@ class pelangganModel
     // method untuk query db
     public function db_pelanggan()
     {
+       
         $data="SELECT * FROM pelanggan";
         $result=$this->connect->query($data);
         while ($i=mysqli_fetch_array($result)) {

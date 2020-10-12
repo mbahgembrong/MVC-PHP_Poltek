@@ -25,7 +25,7 @@
               <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Pelanggan</a>
+            <a class="nav-link" href="#">Pegawai</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" href="#">Pegawai</a>
@@ -40,7 +40,7 @@
 
     <!-- card -->
     <div class="card">
-      <h5 class="card-header">Data Pelanggan Toko <?= $data['nama'] ?></h5>
+      <h5 class="card-header">Data Pegawai Toko <?= $data['nama'] ?></h5>
       <div class="card-body">
         <div id="table" class="mb-4">
         <table class="table">
@@ -56,7 +56,7 @@
           <tbody>
             <?php
         $no=1;
-        foreach ($data['pelanggan'] as $data) :
+        foreach ($data['pegawai'] as $data) :
         ?>
             <tr>
               <th scope="row"><?= $no++ ?></th>
@@ -68,7 +68,7 @@
             <?php endforeach; ?>
           </tbody>
         </table>
-        <a href="#" class="btn btn-primary">Tambah Pelanggan</a>
+        <a href="#" class="btn btn-primary">Tambah Pegawai</a>
       </div>
         <div>
           <button type="submit" id="hide">Hide Data</button>
