@@ -39,4 +39,14 @@ class About extends Controller
     {
         echo $this->model('pelangganModel')->getNamaToko();
     }
+    public function pegawai()
+    {
+        //  Mengambil data dari pegawai model, dengan method getNamaToko()
+        $data['nama'] = $this->model('pelangganModel')->getNamaToko();
+        // Mengambil data dari pegawai model, dengan method getpegawai()
+        $data['pegawai']=$this->model('pegawaiModel')->db_pegawai();
+        //  Ditampilkan ke dalam view about /pegawai
+        // $this->view('about/pegawai');
+        $this->view('about/pegawai', $data);
+    }
 }
